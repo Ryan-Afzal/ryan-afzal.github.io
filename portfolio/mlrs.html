@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ryan Afzal | MLRS</title>
+
+        <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            -->
+        <link rel="stylesheet" href="/css/style.css" />
+        <!--
+        <link rel="icon" type="image/???" href="./images/????">
+            -->
+    </head>
+    <body>
+        <header>
+            <div id="navbar" class="container">
+                <div id="navbar-title">
+                    <h1><span>Ryan Afzal</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experience.html">Education & Experience</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="banner">
+                    <ul class="portfolio-links">
+                        <li class="current"><a href="/portfolio/mlrs.html">MLRS</a></li>
+                        <li><a href="/portfolio/launcher.html">Rocket Launcher</a></li>
+                        <li><a href="/portfolio/afzal2.html">Afzal Mk.II</a></li>
+                        <li><a href="/portfolio/whalculator.html">Whalculator</a></li>
+                        <li><a href="/portfolio/roochat.html">RooChat</a></li>
+                        <li><a href="/portfolio/afzal1.html">Afzal Mk.I</a></li>
+                        <li><a href="/portfolio/nebulanuker.html">Nebula Nuker</a></li>
+                    </ul>
+                </div>
+
+                <h2>'Missile' Launcher – Multiple Rocket Launcher</h2>
+
+                <!--
+                Quick facts
+                    Date
+                    Budget
+                    Location
+                -->
+
+                <p>This project is an ‘erector-launcher’; a machine capable of automatically turning and elevating (erecting) a rocket for launch. The goal of this project was to build such a machine for model rockets, able to lift and aim one or more rockets for launch, inspired by military Transporter-Erector-Launchers (TELs). When launching model rockets, a simple rail or rod is used to hold the rocket. However, this rod must be ideally vertical to the ground or aimed at a precise angle to compensate for windy conditions. The machine I aimed to build would be able to do so automatically and precisely.</p>
+                <p>While all my projects were driven by their specifications, this device had very exacting ones. The primary concern with such a device is safety. If built too weak, the rocket could fall over during launch, which could lead to it being fired at people or objects nearby, or lead to people being caught in the exhaust and burned. To avert this possibility, I assigned a minimum weight limit to the device. It needed to be capable of turning and elevating at least 150lbs and be resistant to back driving up to 300lbs. Model rockets typically do not exceed more than a few pounds, so I deemed this weight limit more than sufficient to launch even the heaviest model rockets.</p>
+                <p>In the event of a power failure, the launcher needed to know its position even after reset, to avoid having to recalibrate its sensors. For that reason, I chose to build the rotation mechanism using a DC motor with gearbox, and a separate, absolute-position encoder to report the device’s azimuthal position. A second encoder was attached to the elevation arm. Each encoder is used by the motor controller to direct power to the DC motor and linear actuator based on a PID feedback loop. Another constraint was the desire to allow for continuous 360-degree rotation. This meant that slip rings had to be used inside the device for all power or data passing from the base to the upper platform. This posed a major challenge as two concentric slip rings were needed, one for the high-current motor lines and rocket ignition circuit, and another for the low-current but more numerous data wires.</p>
+                <p>The final specification was that power to the rocket igniter and electronics had to be kept separate, for safety reasons. This permits the use of an external interlock controlling rocket ignition power, while still allowing the device to elevate for launch safely. The machine was therefore designed with two separate power inputs, one for the launcher’s own power and controls, and a second that passes straight to the upper platform to an external wire mount, where it can be wired to the rocket’s igniter. Finally, six wires were provided for use by any rocket sensors or data that might require pass-through to a ground computer. These wires pass through the launcher from its base up to the upper rotating platform.</p>
+                <p>To minimize last-minute design changes, I decided to model the mechanical structure entirely in CAD to try and catch any unforeseen issues before I ordered parts. While this did take up a considerable amount of time (almost an entire semester!), it proved invaluable. I was able to determine many specific parameters or constraints during the design phase, rather than find out after already buying parts. Another use of simulation tools to ease development was during the coding of the control loops. Each motor (the DC motor driving the rotation and the linear actuator driving the elevation) had a microcontroller linked to an encoder to run the control loop. These were in turn connected to the launcher’s main controller. To verify that the control loops would work before I built the device, I wrote a piece of software to simulate the motion of the device with a control loop trying to change its position. This helped me considerably, as I was able to fine-tune the PID parameters and fix numerous issues with the angle calculations.</p>
+                <p>Owing to my careful use of modeling and simulation tools and testing of individual systems, the design overall worked virtually flawlessly when constructed. That’s not to say there weren’t unforeseen issues that I had to fix, there were several. None of them required any major design change.</p>
+                <p>In the end, I never got to conduct a proper test of the device because Boston is scarce in suitable rocket launch sites. I tested the weight capacity of the device by standing on it and letting it spin and lift me like a dentist's chair. After graduation however, I shipped it back to Washington and donated it to an old teacher of mine for him to use with his students.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright Ryan Afzal &copy; 2026</p>
+        </footer>
+    </body>
+</html>
