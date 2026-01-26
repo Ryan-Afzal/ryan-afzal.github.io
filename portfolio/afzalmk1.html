@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ryan Afzal | Afzal Mk.I</title>
+
+        <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            -->
+        <link rel="stylesheet" href="/css/style.css" />
+        <!--
+        <link rel="icon" type="image/???" href="./images/????">
+            -->
+    </head>
+    <body>
+        <header>
+            <div id="navbar" class="container">
+                <div id="navbar-title">
+                    <h1><span>Ryan Afzal</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/experience.html">Education & Experience</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="banner">
+                    <ul class="portfolio-links">
+                        <li><a href="/portfolio/mlrs.html">MLRS</a></li>
+                        <li class="current"><a href="/portfolio/afzal1.html">Afzal Mk.I</a></li>
+                        <li><a href="/portfolio/nebulanuker.html">Nebula Nuker</a></li>
+                    </ul>
+                </div>
+
+                <h2>Afzal Mk.I Quadcopter Drone</h2>
+
+                <figure align="center">
+                    <img src="/images/afzalmk1/cover.jpg" alt="Completed assembly" style="width:30rem;" />
+                    <figcaption>
+                        The original build of the drone, with controller.
+                        The Arduino board that acts as the main controller can be seen on top.
+                        Underneath is a blue box that holds the radio and gyroscope (the antenna is poking out the left side of the box).
+                    </figcaption>
+                </figure>
+
+                <div style="display: grid; grid-template-columns: 25% auto 25%">
+                    <div></div>
+                    <div class="card" align="center">
+                        <h4>Quick Facts</h4>
+                        <table>
+                            <tr>
+                                <th>Date:</th>
+                                <td>July 2018 - August 2021</td>
+                            </tr>
+                            <tr>
+                                <th>Cost:</th>
+                                <td>~$200</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div></div>
+                </div>
+
+                <p>
+                    This project consisted of a medium-sized quadcopter drone, controlled via an Arduino microcontroller and stabilized via an onboard gyro.
+                    It is controlled via a handheld radio controller.
+                    The drone has an auto-level feature, where it will level itself when the sticks are released. The project began in the summer of 2018 and finished in early 2020.
+                </p>
+                <p>
+                    In 2021, I added a rocket onto the top.
+                    This involved enclosing the electronics to protect them from the rocket exhaust.
+                    Next, I added an onboard 9V battery and transistor wired into the rocket's electric igniter allowing the Arduino controller to set it off midflight.
+                    This feature was linked to the radio controller so that at the flip of a switch the rocket would launch.
+                    Finally, I designed, and 3D printed a mount for the rocket's blast plate and launch rod, which I bolted to the top of the drone.
+                    This modification took place starting in the last few months of 12th grade, and the launch took place in August 2021.
+                    Fig. 2 shows the rocket launching mid-flight.
+                    The new, black box holding all electronics can be seen, as well as the launch rod sticking out the top.
+                </p>
+
+                <figure align="center">
+                    <img src="/images/afzalmk1/liftoff.png" alt="Drone liftoff" style="width:30rem;" />
+                    <figcaption>Fig. 1 - The drone, with rocket equipped, lifting off.</figcaption>
+                </figure>
+
+                <figure align="center">
+                    <img src="/images/afzalmk1/launch.png" alt="Rocket launch" style="width:30rem;" />
+                    <figcaption>Fig. 2 - Rocket launch</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright Ryan Afzal &copy; 2026</p>
+        </footer>
+    </body>
+</html>
