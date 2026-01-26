@@ -35,7 +35,7 @@
         <main>
             <div class="container">
                 <h2>Welcome to my portfolio!</h2>
-                <p>Hello! I'm Ryan. I'm a nuclear engineering student with a lifelong passion for learning and technology.</p>
+                <p>Hello! I'm Ryan. I'm a nuclear engineering student with a lifelong passion for learning, technology, and building.</p>
 
                 <div align="center">
                     <a class="badge" href="https://github.com/Ryan-Afzal"><img src="/images/GitHub_Logo.png" title="GitHub" alt="GitHub" style="height:24px;" /></a>
@@ -46,6 +46,32 @@
                 <hr />
                 <h3>Skills</h3>
 
+                <div style="display: grid; grid-template-columns: 50% auto;">
+                    <div>
+                        <p>
+                            <ul>
+                                <li><strong>Not a desk engineer!</strong></li>
+                                <li>Experienced with machining (Bridgeport mill, drill press)</li>
+                                <li>Strong experience with the design and construction of complex electromechanical devices</li>
+                                <li>Can use a soldering iron and other electronics fabrication tools</li>
+                                <li>Experienced with 3D printing and CNC workflows</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <ul>
+                                <li>Worked with laser and waterjet cutting machines</li>
+                                <li>Experienced with microcontroller programming</li>
+                                <li>Can test and debug electronics</li>
+                                <li>Experienced with control theory and PID tuning</li>
+                                <li>Code is well-commented and cleanly organized</li>
+                                <li>Can read technical documentation</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
                 <!-- 2 Columns-->
                 <div style="display: grid; grid-template-columns: 50% auto;">
                     <!-- Programming languages fluency table -->
@@ -54,30 +80,31 @@
                             <tr>
                                 <th>Fluent</th>
                                 <td>
-                                    <!-- C#, .NET, Python, Git, Java -->
-                                    <img src="/images/c-sharp-logo.svg" title="C#" alt="C#" style="width: 48px; height:48px;" />
-                                    <img src="/images/dotnet-logo.svg" title=".NET & ASP.NET" alt=".NET" style="width: 48px; height:48px;" />
-                                    <img src="/images/python-logo-small.svg" title="Python" alt="Python" style="width: 48px; height:48px;" />
-                                    <img src="/images/git-logo.svg" title="Git & versioning" alt="Git" style="width: 48px; height:48px;" />
-                                    <img src="/images/java-logo.svg" title="Java" alt="Java" style="width: 48px; height:48px;" />
+                                    <!-- C#, .NET, Python, Git, Java, Arduino -->
+                                    <img src="/images/c-sharp-logo.svg" title="C#" alt="C#" style="width:36px; height:36px;" />
+                                    <img src="/images/dotnet-logo.svg" title=".NET & ASP.NET" alt=".NET" style="width:36px; height:36px;" />
+                                    <img src="/images/python-logo-small.svg" title="Python" alt="Python" style="width:36px; height:36px;" />
+                                    <img src="/images/git-logo.svg" title="Git & versioning" alt="Git" style="width:36px; height:36px;" />
+                                    <img src="/images/java-logo.svg" title="Java" alt="Java" style="width:36px; height:36px;" />
+                                    <img src="/images/arduino-logo.svg" title="Arduino" alt="Arduino" style="width:36px; height:36px;" />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Proficient</th>
                                 <td>
                                     <!-- C++, HTML, CSS, JS -->
-                                    <img src="/images/c++-logo.svg" title="C++" alt="C++" style="width: 48px; height:48px;" />
-                                    <img src="/images/html-logo.svg" title="HTML" alt="HTML" style="width: 48px; height:48px;" />
-                                    <img src="/images/css-logo.svg" title="CSS" alt="CSS" style="width: 48px; height:48px;" />
-                                    <img src="/images/js-logo.svg" title="JavaScript" alt="JavaScript" style="width: 48px; height:48px;" />
+                                    <img src="/images/c++-logo.svg" title="C++" alt="C++" style="width:36px; height:36px;" />
+                                    <img src="/images/html-logo.svg" title="HTML" alt="HTML" style="width:36px; height:36px;" />
+                                    <img src="/images/css-logo.svg" title="CSS" alt="CSS" style="width:36px; height:36px;" />
+                                    <img src="/images/js-logo.svg" title="JavaScript" alt="JavaScript" style="width:36px; height:36px;" />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Familiar</th>
                                 <td>
                                     <!-- MATLAB, XML -->
-                                    <img src="/images/matlab-logo.png" title="MATLAB&reg;" alt="MATLAB" style="width: 48px; height:48px;" />
-                                    <img src="/images/xml-logo.svg" title="XML" alt="XML" style="width: 48px; height:48px;" />
+                                    <img src="/images/matlab-logo.png" title="MATLAB&reg;" alt="MATLAB" style="width:36px; height:36px;" />
+                                    <img src="/images/xml-logo.svg" title="XML" alt="XML" style="width:36px; height:36px;" />
                                 </td>
                             </tr>
                         </table>
@@ -103,17 +130,7 @@
                     </div>
                 </div>
 
-                <h4>Experimental</h4>
-                <p>
-                    <ul>
-                        <li><strong>Not a desk engineer!</strong></li>
-                        <li>Familiar with machining and electronics prototyping</li>
-                        <li>Experienced in additive and CNC workflows</li>
-                        <li>Code is well-commented and cleanly organized</li>
-                    </ul>
-                </p>
-
-                <h4>Research</h4>
+                <h3>Research</h3>
                 <strong>Graduate Researcher, HEAT Lab</strong>
                 <p>I am developing a novel method of thermal characterization at the <a href="https://heat.nuc.berkeley.edu/" target="_blank">HEAT Lab</a> at UC Berkeley, under Prof. Guanyu Su. Current techniques for measuring the thermal properties of anisotropic materials are slow and labor-intensive, which makes them poorly-suited for the large quantity of new materials under development for nuclear and space systems. Predictive algorithms (ML, AI, etc.) require a closed feedback loop where materials can be characterized then the data fed back into the algorithm to enhance predictive ability. We aim to develop a neural network-enhanced measurement technique that can run within a few seconds rather than a few hours to close the feedback loop and accelerate the pace of materials research.</p>
 
